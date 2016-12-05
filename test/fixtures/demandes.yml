@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  poste_demande: MyString
+  secteur: MyString
+  wilaya_demande: MyString
+  commune_demande: MyString
+  description: MyText
+
+two:
+  poste_demande: MyString
+  secteur: MyString
+  wilaya_demande: MyString
+  commune_demande: MyString
+  description: MyText
