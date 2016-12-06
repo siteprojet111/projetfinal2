@@ -1,0 +1,11 @@
+%h1= @formation.titre_formation
+%p= "Date Début: " +@formation.date_df.to_s
+%p= "Date Fin: " +@formation.date_ff.to_s
+%p= "Institut: " +@formation.institut.to_s
+
+/%p= @dem.description/
+#links
+ = link_to "Ajouter une nouvelle formation", "/formations/new", class: "btn btn-sm btn-default"
+ = link_to "Afficher toutes les formations", "/formations/liste_formations", class: "btn btn-sm btn-default"
+ /= link_to "Modifier", edit_demande_path(@demande), class: "btn btn-sm btn-default"
+ //= link_to "Suprimer", demande_path(@demande), method: :delete, data: { confirm: "are you sure?" }, class: "btn btn-sm btn-default"

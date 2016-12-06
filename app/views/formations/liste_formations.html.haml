@@ -1,0 +1,15 @@
+= link_to "Nouvelle formation", new_formation_path
+%h1 les formations
+
+#jobs
+
+	- @formations.each do |formation|
+		.job
+			
+				
+			%p{:style=>"font-weight:bold; "}= link_to  formation.titre_formation, formation
+					
+			%p= "Date Début: " +formation.date_df.to_s
+			%p= "Date Fin: " +formation.date_ff.to_s
+			%p= "Institut: " +formation.institut.to_s
+

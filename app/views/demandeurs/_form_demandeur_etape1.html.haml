@@ -1,0 +1,34 @@
+=simple_form_for @demandeur do |f|
+	=f.input :email, label: "Email :"
+	=f.input :code_acces, label: "Code d\'accés :" 
+	=f.input :prenom, label: "Prénom :" 
+	=f.input :nom, label: "Nom :" 
+	=f.input :age, label: "Age :"
+	=f.input :photo_profil, as: :file, label: "Photo de profil"
+	
+	=f.label :civilite, label: "Civilité :"
+	=f.select :civilite, [['Homme', 'Homme'], ['Femme', 'Femme']]
+	
+	
+	=f.label :s_maritale, label: "S.maritale :"
+	=f.select :s_maritale, [['marié(e)', 'marié(e)'], ['célibataire', 'célibataire'],['Divorcé(e)', 'Divorcé(e)'], ['veuf(ve)', 'veuf(ve)']]
+
+	=f.input :adresse, label: "Adresse :"
+
+	=f.label :wilaya, label: "Wilaya :"
+	=f.select :wilaya, [['Alger', 'Alger'], ['Blida', 'Blida'], ['Tizi ouazzou', 'Tizi ouazzou'], ['Chlef', 'Chlef']]
+	
+	=f.label :commune, label: "Commune :"
+	=f.select :commune, [['Alger', 'Alger'], ['Blouizdad', 'Blouizdad'], ['Kouba', 'Kouba'], ['Hydra', 'Hydra']]
+	=f.input :tel1, label: "Tel 1 :" 
+	=f.input :tel2, label: "Tel 2 :" 
+	
+
+	=f.input :permis, as: :check_boxes, collection: [['A', 'A'], ['B', 'B'], ['C', 'C'], ['D', 'D']]
+
+	=f.label :service_national, label: "Service national :"
+	=f.select :service_national, [['Accompli', 'Accompli'], ['Non accompli', 'Non accompli']]
+	=f.input :competence_info, label: "Compétences informatique :" 
+	
+	
+	=f.button :submit

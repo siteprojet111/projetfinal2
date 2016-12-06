@@ -1,0 +1,17 @@
+= link_to "Nouvelle demande", new_demande_path
+%h1 les demandes
+
+#jobs
+
+	- @demandes.each do |demande|
+		.job
+			
+				
+			%p{:style=>"font-weight:bold; "}= link_to  demande.poste_demande, demande
+					
+			%p= "Wilaya: " +demande.wilaya_demande.to_s
+			%p= "Commune: " +demande.commune_demande.to_s
+			%p= "Description: " +demande.description.to_s
+
+
+			

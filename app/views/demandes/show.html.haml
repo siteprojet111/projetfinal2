@@ -1,0 +1,12 @@
+%h1= @demande.poste_demande
+%p= "Secteur: " + @demande.secteur.to_s
+%p= "Wilaya: " +@demande.wilaya_demande.to_s
+%p= "Commune: " +@demande.commune_demande.to_s
+%p= "Description: " +@demande.description.to_s
+
+/%p= @dem.description/
+#links
+ = link_to "Ajouter une nouvelle demande", "/demandes/new", class: "btn btn-sm btn-default"
+ = link_to "Afficher toutes les demandes", "/demandes/liste_demandes", class: "btn btn-sm btn-default"
+ /= link_to "Modifier", edit_demande_path(@demande), class: "btn btn-sm btn-default"
+ //= link_to "Suprimer", demande_path(@demande), method: :delete, data: { confirm: "are you sure?" }, class: "btn btn-sm btn-default"

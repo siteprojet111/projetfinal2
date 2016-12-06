@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_df: 2016-12-05
+  date_ff: 2016-12-05
+  titre_formation: MyString
+  institut: MyString
+
+two:
+  date_df: 2016-12-05
+  date_ff: 2016-12-05
+  titre_formation: MyString
+  institut: MyString

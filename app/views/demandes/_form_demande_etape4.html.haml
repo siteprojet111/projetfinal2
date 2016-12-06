@@ -1,0 +1,11 @@
+=simple_form_for @demande do |f|
+	=f.input :poste_demande, label: "Poste souhaité :"
+	%p Secteur 
+	=f.select :secteur, [['Informatique', 'Informatique'], ['Banque', 'Banque'], ['Assurances', 'Assurances'], ['reseaux', 'reseaux']]
+	%p Wilaya
+	=f.select :wilaya_demande, [['Alger', 'Alger'], ['Blida', 'Blida'], ['Tizi ouazzou', 'Tizi ouazzou'], ['Chlef', 'Chlef']]
+	%p Commune
+	=f.select :commune_demande, [['Alger', 'Alger'], ['Blouizdad', 'Blouizdad'], ['Kouba', 'Kouba'], ['Hydra', 'Hydra']]
+	=f.input :description, label: "Description :" 
+	
+	=f.button :submit, "valider"

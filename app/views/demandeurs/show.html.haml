@@ -1,0 +1,23 @@
+%h1= @demandeur.email
+%p= "Code d\'accés: " + @demandeur.code_acces.to_s
+%p= "Email: " + @demandeur.nom.to_s
+%p= "Prénom: " + @demandeur.prenom.to_s
+%p= "Age: " + @demandeur.age.to_s
+%p= image_tag @demandeur.photo_profil(:thumb)
+%p= "Civilité: " +@demandeur.civilite.to_s
+%p= "S.maritale: " +@demandeur.s_maritale.to_s
+%p= "Adresse: " +@demandeur.adresse.to_s
+%p= "Wilaya: " +@demandeur.wilaya.to_s
+%p= "Commune: " +@demandeur.commune.to_s
+%p= "Tel 1: " +@demandeur.tel1.to_s
+%p= "Tel 2: " +@demandeur.tel2.to_s
+%p= "Permis: " + @demandeur.permis.to_s
+%p= "Service national : " +@demandeur.service_national.to_s
+%p= "Compétences informatique: " +@demandeur.competence_info.to_s
+
+
+
+/%p= @dem.description/
+#links
+ = link_to "Ajouter une nouvelle demande", "/demandes/new", class: "btn btn-sm btn-default"
+ = link_to "Afficher toutes les demandes", "/demandes/liste_demandes", class: "btn btn-sm btn-default"
