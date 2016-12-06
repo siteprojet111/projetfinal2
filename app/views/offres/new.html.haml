@@ -1,0 +1,11 @@
+%h1 Nouveau 
+=simple_form_for(@offre, html: {class: 'form-horizontal'}) do |f|
+    =f.input :poste_offre, label: "le poste", input_html: {class: "form-control"}
+    =f.input :lieu, label: "Lieu de travail", input_html: {class: "form-control"}
+    =f.input :description_offre, label: "description", input_html: {class: "form-control"}
+    =f.input :critere, label: "le critère de selection", input_html: {class: "form-control"}
+    =f.input :duree, label: "durée de l'offre", input_html: {class: "form-control"}
+    %br/
+    =f.button :submit, "créer"
+    
+=link_to "Back", "/offres/liste_offres", class: "btn btn-sm btn-default"

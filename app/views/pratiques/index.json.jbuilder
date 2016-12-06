@@ -1,0 +1,1 @@
+json.array! @pratiques, partial: 'pratiques/pratique', as: :pratique

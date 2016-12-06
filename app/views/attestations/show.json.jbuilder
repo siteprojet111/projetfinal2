@@ -1,0 +1,1 @@
+json.partial! "attestations/attestation", attestation: @attestation

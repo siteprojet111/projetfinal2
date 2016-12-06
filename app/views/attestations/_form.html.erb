@@ -1,0 +1,14 @@
+<%= simple_form_for(@attestation) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :titre_attes %>
+    <%= f.input :universite %>
+    <%= f.input :date_da %>
+    <%= f.input :date_fa %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

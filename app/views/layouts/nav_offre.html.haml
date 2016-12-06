@@ -1,0 +1,23 @@
+!!!
+%html
+%head
+	%title WADIFTEK
+	= stylesheet_link_tag    'nav_offre', media: 'all', 'data-turbolinks-track': 'reload'
+	= javascript_include_tag 'nav_offre', 'data-turbolinks-track': 'reload'
+	= csrf_meta_tags 
+%body
+	%nav.navbar.navbar-default
+		.container
+			.navbar-brand Wadiftek
+			%ul.nav.navbar-nav
+				%li= link_to "Demandeurs ", root_path
+				
+				= link_to "offres", "/offres/liste_offre", class: "navbar-text navbar-right navbar-link"
+				= link_to "Recherche", "/offres/liste_offre", class: "navbar-text navbar-right navbar-link"
+				= link_to "mes demandes", "/demandes/", class: "navbar-text navbar-right navbar-link"
+				= link_to "Contact", "/demandes/", class: "navbar-text navbar-right navbar-link"
+
+				
+	.container
+		.col-md-6.col-md-offset-3
+		= yield

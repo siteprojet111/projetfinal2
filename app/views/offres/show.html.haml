@@ -1,0 +1,14 @@
+#jobs
+    .job
+        %h1= @offre.poste_offre
+        %p= "Description du poste: " + @offre.description_offre
+        %p= "Lieu : " + @offre.lieu
+        %p= "Crtère de Selection: " +@offre.critere
+        %p= "Date de publication: " +@offre.date_offre.to_s
+        %p= "Duré de l offre: " +@offre.duree
+       
+        
+#links
+=link_to "Accueil", "/offres/liste_offres", class: "btn btn-sm btn-default"
+=link_to "Modifier", edit_offre_path, class: "btn btn-sm btn-default"
+=link_to "Supprimer", offre_path(@offre), method: :delete, data: { confirm: "Voulez vous vraiment suprimer cet offre?? "}, class: "btn btn-sm btn-default"
