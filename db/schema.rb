@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161206092514) do
+=======
+ActiveRecord::Schema.define(version: 20161205115905) do
+>>>>>>> cbba4c7c425c32f2690e93c15b81f236fbbfaf37
 
   create_table "demandes", force: :cascade do |t|
     t.string   "poste_demande"
@@ -39,12 +43,17 @@ ActiveRecord::Schema.define(version: 20161206092514) do
     t.string   "permis"
     t.string   "service_national"
     t.text     "competence_info"
+<<<<<<< HEAD
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.string   "photo_profil_file_name"
     t.string   "photo_profil_content_type"
     t.integer  "photo_profil_file_size"
     t.datetime "photo_profil_updated_at"
+=======
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+>>>>>>> cbba4c7c425c32f2690e93c15b81f236fbbfaf37
   end
 
   create_table "diplomes", force: :cascade do |t|
@@ -57,6 +66,18 @@ ActiveRecord::Schema.define(version: 20161206092514) do
     t.integer  "demandeur_id"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "experieces", force: :cascade do |t|
+    t.date     "date_de"
+    t.date     "date_fe"
+    t.string   "titre_poste"
+    t.string   "employeur"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+>>>>>>> cbba4c7c425c32f2690e93c15b81f236fbbfaf37
   create_table "experiences", force: :cascade do |t|
     t.date     "date_de"
     t.date     "date_fe"

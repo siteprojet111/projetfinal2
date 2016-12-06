@@ -51,5 +51,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+<<<<<<< HEAD
   Paperclip.options[:command_path]="usr/bin"
+=======
+>>>>>>> cbba4c7c425c32f2690e93c15b81f236fbbfaf37
 end

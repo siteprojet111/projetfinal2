@@ -1,4 +1,5 @@
 class FormationsController < ApplicationController
+
 	before_action :find_formation, only: [:show, :edit, :update, :destroy]
 	def liste_formations
 		@formations = Formation.all
