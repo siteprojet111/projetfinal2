@@ -1,0 +1,11 @@
+%h2 la page edit
+=simple_form_for(@offre, html: {class: 'form-horizontal'}) do |f|
+    =f.input :poste_offre, label: "le poste"
+    =f.input :description_offre, label: "description"
+    =f.input :lieu, label: "lieu"
+    =f.input :critere, label: "le critère de selection"
+    =f.input :date_offre, label: "Date de publication"
+    =f.input :duree, label: "durée de l'offre"
+    %br/
+    =f.button :submit, "Mettre à jour"
+=link_to "Retour", "/offres/liste_offres", class: "btn btn-sm btn-default"

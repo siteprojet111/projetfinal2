@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre attes:</strong>
+  <%= @attestation.titre_attes %>
+</p>
+
+<p>
+  <strong>Universite:</strong>
+  <%= @attestation.universite %>
+</p>
+
+<p>
+  <strong>Date da:</strong>
+  <%= @attestation.date_da %>
+</p>
+
+<p>
+  <strong>Date fa:</strong>
+  <%= @attestation.date_fa %>
+</p>
+
+<%= link_to 'Edit', edit_attestation_path(@attestation) %> |
+<%= link_to 'Back', attestations_path %>

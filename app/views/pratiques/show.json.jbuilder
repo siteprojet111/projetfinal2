@@ -1,0 +1,1 @@
+json.partial! "pratiques/pratique", pratique: @pratique

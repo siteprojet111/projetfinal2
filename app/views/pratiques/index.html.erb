@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pratiques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titre attes</th>
+      <th>Universite</th>
+      <th>Date da</th>
+      <th>Date fa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pratiques.each do |pratique| %>
+      <tr>
+        <td><%= pratique.titre_attes %></td>
+        <td><%= pratique.universite %></td>
+        <td><%= pratique.date_da %></td>
+        <td><%= pratique.date_fa %></td>
+        <td><%= link_to 'Show', pratique %></td>
+        <td><%= link_to 'Edit', edit_pratique_path(pratique) %></td>
+        <td><%= link_to 'Destroy', pratique, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pratique', new_pratique_path %>

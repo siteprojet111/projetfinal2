@@ -1,0 +1,2 @@
+class Attestation < ApplicationRecord
+end

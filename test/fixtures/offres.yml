@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  poste_offre: MyString
+  description_offre: MyText
+  lieu: MyString
+  critere: MyText
+  date_offre: 2016-12-05
+  duree: MyString
+
+two:
+  poste_offre: MyString
+  description_offre: MyText
+  lieu: MyString
+  critere: MyText
+  date_offre: 2016-12-05
+  duree: MyString

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre attes:</strong>
+  <%= @pratique.titre_attes %>
+</p>
+
+<p>
+  <strong>Universite:</strong>
+  <%= @pratique.universite %>
+</p>
+
+<p>
+  <strong>Date da:</strong>
+  <%= @pratique.date_da %>
+</p>
+
+<p>
+  <strong>Date fa:</strong>
+  <%= @pratique.date_fa %>
+</p>
+
+<%= link_to 'Edit', edit_pratique_path(@pratique) %> |
+<%= link_to 'Back', pratiques_path %>

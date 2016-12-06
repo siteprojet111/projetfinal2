@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre_attes: MyString
+  universite: MyString
+  date_da: 2016-12-05
+  date_fa: 2016-12-05
+
+two:
+  titre_attes: MyString
+  universite: MyString
+  date_da: 2016-12-05
+  date_fa: 2016-12-05

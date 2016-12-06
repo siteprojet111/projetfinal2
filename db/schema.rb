@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161205115905) do
+ActiveRecord::Schema.define(version: 20161205213205) do
+
+  create_table "attestations", force: :cascade do |t|
+    t.string   "titre_attes"
+    t.string   "universite"
+    t.date     "date_da"
+    t.date     "date_fa"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "demandes", force: :cascade do |t|
     t.string   "poste_demande"
@@ -86,6 +95,26 @@ ActiveRecord::Schema.define(version: 20161205115905) do
     t.string   "niveau"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "offres", force: :cascade do |t|
+    t.string   "poste_offre"
+    t.text     "description_offre"
+    t.string   "lieu"
+    t.text     "critere"
+    t.date     "date_offre"
+    t.string   "duree"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  create_table "pratiques", force: :cascade do |t|
+    t.string   "titre_attes"
+    t.string   "universite"
+    t.date     "date_da"
+    t.date     "date_fa"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "stages", force: :cascade do |t|

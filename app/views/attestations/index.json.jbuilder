@@ -1,0 +1,1 @@
+json.array! @attestations, partial: 'attestations/attestation', as: :attestation

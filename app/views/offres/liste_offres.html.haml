@@ -1,0 +1,10 @@
+
+%h1 liste des offres
+#jobs
+    -@offre.each do |p|
+        .job
+           
+            %h2= link_to p.poste_offre, p
+        
+           
+    
